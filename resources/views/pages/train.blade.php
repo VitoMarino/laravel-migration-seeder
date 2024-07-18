@@ -2,7 +2,7 @@
 
 @section('main-content')
     <h1 class="text-center">
-        BENVENUTO IN BOOL TRAIN!
+        Qui vedrai i treni in partenza
     </h1>
 
 @endsection
