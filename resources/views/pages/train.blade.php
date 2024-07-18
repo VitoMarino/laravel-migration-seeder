@@ -1,21 +1,27 @@
 @extends('layouts.app')
 
 @section('main-content')
-    <h1 class="text-center">
-        Qui vedrai i treni in partenza
-    </h1>
-
     <section>
-        <h4>
+        <h2 class="text-center">
             Treni in arrivo
-        </h4>
+        </h2>
 
-        <ul>
-            @foreach ( $trains as $train )
-            <li>
-                {{$train->azienda;}}
-            </li>
+        <ul class="d-flex justify-content-center">
+            @foreach ($trains as $train)
+            <div class="card me-3" style="width: 18rem;">
+                <div class="card-body">
+                    <li class="card-text">{{ $train->azienda }}</li>
+                    <li class="card-text">Stazione di partenza : {{ $train->stazione_di_partenza }}</li>
+                    <li class="card-text">Stazione di arrivo : {{ $train->stazione_di_arrivo }}</li>
+                    <li class="card-text"> Orario di partenza : {{ $train->orario_di_partenza }}</li>
+                    <li class="card-text">Orario di arrivo : {{ $train->orario_di_arrivo }}</li>
+                    <li class="card-text">Codice treno : {{ $train->codice_treno }}</li>
+                    <li class="card-text">Numero carrozza : {{ $train->numer_carrozze }}</li>
+                </div>
+            </div>
             @endforeach
         </ul>
+
+
     </section>
 @endsection

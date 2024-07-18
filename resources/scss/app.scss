@@ -6,5 +6,17 @@ a{
 
 li{
     list-style: none;
-    font-size: 2rem;
 }
+
+header{
+    li{
+        font-size: 2rem;
+    }
+}
+
+main{
+    li{
+        margin-left: .5rem;
+    }
+}
+

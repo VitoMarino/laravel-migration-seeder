@@ -16,5 +16,5 @@ use App\Http\Controllers\TrainController;
 */
 
 Route::get('/', [PageController::class,'index']);
-Route::get('/trains', [PageController::class,'trains']);
+// Route::get('/trains', [PageController::class,'trains']);
 Route::get('/trains', [TrainController::class,'index']);
