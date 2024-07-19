@@ -6,9 +6,9 @@
             Treni in arrivo
         </h2>
 
-        <ul class="d-flex justify-content-center">
+        <ul class="d-flex justify-content-center flex-wrap">
             @foreach ($trains as $train)
-            <div class="card me-3" style="width: 18rem;">
+            <div class="card me-3 p-5" style="width: 18rem;">
                 <div class="card-body">
                     <li class="card-text">{{ $train->azienda }}</li>
                     <li class="card-text">Stazione di partenza : {{ $train->stazione_di_partenza }}</li>
